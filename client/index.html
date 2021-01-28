@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>GIS Programming Workshop</title>
+    <title>Web GIS Workshop</title>
 
     <link rel="stylesheet" href="css/reveal.css" />
     <link rel="stylesheet" href="css/theme/white.css" />
@@ -47,19 +47,25 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <div style="font-size: 2em; text-shadow: 0 2px 0 #ccc;">
-            An Introduction to GIS Programming:
+          <div style="font-size: 2em; text-shadow: 0 2px 0 #ccc">
+            An Introduction to Web GIS and Interactive Mapping:
           </div>
-          <div style="font-size: 1em;">
-            <i>Tips on What You Need to Know & How to Get Started</i>
+          <div style="font-size: 1em">
+            <i>Demystifying the Black Box</i>
           </div>
           <img
             src="./assets/img/hitchins-transparent-logo.png"
-            style="height: 100px; width: 100px; background:none; border:none; box-shadow:none; "
+            style="
+              height: 100px;
+              width: 100px;
+              background: none;
+              border: none;
+              box-shadow: none;
+            "
           />
           <div style="margin-top: 20px">
             Tim Hitchins | PCC <br />
-            February 28, 2020
+            January 29, 2021
           </div>
         </section>
 
@@ -84,7 +90,7 @@
             >
               <img
                 src="./assets/img/trimet.png"
-                style="background:none; border:none; box-shadow:none;"
+                style="background: none; border: none; box-shadow: none"
               />
             </a>
             <a
@@ -93,7 +99,7 @@
             >
               <img
                 src="./assets/img/metro.png"
-                style="background:none; border:none; box-shadow:none;"
+                style="background: none; border: none; box-shadow: none"
               />
             </a>
           </div>
@@ -104,7 +110,13 @@
             <h3>There is a dizzying array of programming language choices</h3>
             <img
               src="https://www.e-education.psu.edu/geog583/sites/www.e-education.psu.edu.geog583/files/code2.png"
-              style="height: 450px; width:450px; background:none; border:none; box-shadow:none;"
+              style="
+                height: 450px;
+                width: 450px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
             />
             <br />
             <small>Image credit: F. Hardisty / Penn State University</small>
@@ -120,7 +132,7 @@
             >
               <img
                 src="https://www.gogeomatics.ca/wp-content/uploads/Selection_002.png"
-                style="background:none; border:none; box-shadow:none;"
+                style="background: none; border: none; box-shadow: none"
               />
             </a>
             <br />
@@ -137,7 +149,7 @@
             >
               <img
                 src="./assets/img/common-languages-overview.png"
-                style="background:none; border:none; box-shadow:none;"
+                style="background: none; border: none; box-shadow: none"
               />
             </a>
             <br />
@@ -149,12 +161,12 @@
           <div>
             <h3>Who are developers and what do they use?</h3>
             <a
-              href="https://insights.stackoverflow.com/survey/2019"
+              href="https://insights.stackoverflow.com/survey/2020"
               target="_blank"
             >
               <img
                 src="./assets/img/dev-survey-2019.png"
-                style="background:none; border:none; box-shadow:none;"
+                style="background: none; border: none; box-shadow: none"
               />
             </a>
           </div>
@@ -169,330 +181,561 @@
             >
               <img
                 src="https://camo.githubusercontent.com/c10dee1560c19b4036858151aba6f8819db2f451/68747470733a2f2f67697367656f6772617068792e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031362f30332f6769732d70726f6772616d6d696e672d696e2d707974686f6e2d363738783332322e706e67"
-                style="background:none; border:none; box-shadow:none;"
+                style="background: none; border: none; box-shadow: none"
               />
             </a>
           </div>
         </section>
+
         <section>
-          <section>
-            <h1>GIS Programming with Python</h1>
-            <a href="https://www.python.org/" target="_blank">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"
-                style="height: 350px; width:350px; background:none; border:none; box-shadow:none;"
-              />
-            </a>
-          </section>
-          <section>
-            <h1>GIS <i>Programming?</i></h1>
+          <section class="stretch">
+            <h1>
+              <span style="color: teal">Web?</span>&nbsp;&nbsp;<span
+                style="color: crimson"
+                >GIS?</span
+              >
+            </h1>
             <p>
-              Learn how to write <strong>scripts</strong> to perform GIS
-              analyses and automate repetetive tasks with Python.
+              Learn the basics of web development first. It's very important to
+              do this before trying to jump into web GIS development.
             </p>
           </section>
 
           <section class="stretch">
-            <h3>Programming vs Scripting Languages</h3>
-            <hr />
-            <p>
-              <strong>Programming Language:</strong> Is compiled to machine code
-              and run on the hardware of the underlying Operating System.
-              Examples: C, C++, Java
-            </p>
-            <p>
-              <strong>Scripting Language:</strong> Is unstructured subset of
-              programming language. It is generally interpreted. it basically
-              "scripts" other things to do stuff. The primary focus isn't
-              primarily building your own apps but getting an existing app to
-              act the way you want Examples: JS, Python, R
-            </p>
+            <h3>What is the Internet?</h3>
+            <img
+              alt="Two connected computers"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br />
+            <small>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+                target="_blank"
+                >Source credit: Mozilla</a
+              >
+            </small>
           </section>
+
           <section class="stretch">
-            <h3>Why Start with Python?</h3>
+            <h3>Routers</h3>
+            <img
+              alt="cables vs router"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br />
+            <small>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+                target="_blank"
+                >Source credit: Mozilla</a
+              >
+            </small>
+          </section>
+
+          <section class="stretch">
+            <h3>Infinte Scaling</h3>
+            <img
+              alt="router connected to routers"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br />
+            <small>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+                target="_blank"
+                >Source credit: Mozilla</a
+              >
+            </small>
+          </section>
+
+          <section class="stretch">
+            <h3>Modems</h3>
+            <img
+              alt="router connected to modem"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br />
+            <small>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+                target="_blank"
+                >Source credit: Mozilla</a
+              >
+            </small>
+          </section>
+
+          <section class="stretch">
+            <h3>Internet Service Provider (ISP)</h3>
+            <img
+              alt="modem connected to ISP"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br />
+            <small>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+                target="_blank"
+                >Source credit: Mozilla</a
+              >
+            </small>
+          </section>
+
+          <section class="stretch">
+            <h3>IP Address vs Domain Name</h3>
+            <img
+              alt="Google IP and domain name"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br />
+            <small>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+                target="_blank"
+                >Source credit: Mozilla</a
+              >
+            </small>
+          </section>
+
+          <section>
+            <h3>Overview of Web Technologies</h3>
             <ul>
               <li class="fragment">
-                Ease of use: scripting language, interpreted, high-level
-              </li>
-              <li class="fragment">Open-source, object-oriented</li>
-              <li class="fragment">
-                Modular, scalable, portable; comes with development tools
-              </li>
-              <li class="fragment">
-                On-the-fly testing (Interactive Window); rapid prototyping
-              </li>
-              <li class="fragment">
-                Easily ‘glues’ with other languages; installed with ArcGIS 10.x
-                / ArcPro
-              </li>
-              <li class="fragment">
-                Large collaborative community (numeric and scientific
-                extensions)
-              </li>
-            </ul>
-          </section>
-
-          <section class="stretch">
-            <h3>Writing Python Code</h3>
-            <p>
-              There are countless
-              <strong>Interactive Development Environments (IDE)</strong> you
-              can use to interpret your code. Everybody has their own
-              preferences depending on the task as hand.
-            </p>
-
-            <div>
-              <img
-                src="https://i.stack.imgur.com/bz1qE.jpg"
-                style="height: 10%; background:none; border:none; box-shadow:none;"
-              />
-            </div>
-          </section>
-          <section class="stretch">
-            <h3>What about other resources for GIS programming?</h3>
-            <a href="https://www.osgeo.org/" target="_blank">
-              <img
-                src="https://www.osgeo.org/wp-content/themes/roots/assets/img/logo-osgeo.svg"
-                style="background:none; border:none; box-shadow:none;"
-              />
-            </a>
-          </section>
-          <section>
-            <h3>Exercises</h3>
-            <p>
-              <a
-                href="./assets/downloads/gis_programming_demo.txt"
-                download="simple-shell-demo"
-                target="_blank"
-                >simple demo in IDLE
-              </a>
-            </p>
-            <p>
-              <a
-                href="./assets/downloads/ModelBuilderExample.zip"
-                download="ModelBuilderExample.zip"
-                target="_blank"
-                >getting started with model builder</a
-              >
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h1>Data Analysis with Python (and R)</h1>
-            <a href="https://www.anaconda.com/distribution/" target="_blank">
-              <img
-                src="https://image.slidesharecdn.com/tdwiaccelerate-170405043601/95/python-for-data-science-with-anaconda-17-638.jpg?cb=1491367534"
-                style="background:none; border:none; box-shadow:none;"
-              />
-            </a>
-          </section>
-          <section>
-            <h1><i>Data Analysis?</i></h1>
-            <p>
-              Learn how to use popular data analysis libraries in
-              <span style="color:darkgreen"
-                >Python such as
-                <a
-                  href="https://numpy.org/devdocs/user/quickstart.html"
-                  target="_blank"
-                  >Numpy</a
+                <span style="color: teal">Browsers (front end / client)</span>
+                <small
+                  >software programs people use to consume the web (Chrome,
+                  Safari, Firefox, etc…).</small
                 >
-                and
-                <a
-                  href="https://pandas.pydata.org/docs/getting_started/10min.html"
-                  target="_blank"
-                  >Pandas</a
-                ></span
-              >.
-            </p>
-            <p>
-              <strong>OR...</strong> Learn how to perform data analysis using
-              <span style="color:darkturquoise">R and RStudio</span>.
-            </p>
-          </section>
-          <section>
-            <h3>Building a (GIS) Data Science Pipeline</h3>
-            <img src="http://www.uvm.edu/~cbcafier/assets/pipeline.jpg" />
-          </section>
-          <section class="stretch">
-            <h3>Doing Data Analysis in Python with the ArcGIS Python API</h3>
-            <a
-              href="https://notebooks.esri.com/user/5gNZMGNBqeoh9Z3AeYbfg3pn5/tree"
-              target="_blank"
-            >
-              <img
-                src="http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1508152648/Jupyter-notebook-Definitive-Guide_ul01sa.png"
-                style="background:none; border:none; box-shadow:none;"
-              />
-            </a>
-          </section>
-          <section class="stretch">
-            <h3>Doing Data Analysis in R</h3>
-            <a
-              href="https://rmarkdown.rstudio.com/gallery.html"
-              target="_blank"
-            >
-              <img
-                src="https://s3-us-west-2.amazonaws.com/content.edupristine.com/images/blogs/r-program-3.jpg"
-                style="width: 500px; background:none; border:none; box-shadow:none;"
-              />
-            </a>
-            <a href="https://www.rstudio.com/products/RStudio/#Desktop"
-              ><p>Check out the <strong>RStudio IDE</strong></p></a
-            >
-          </section>
-
-          <section>
-            <h3>Exercises</h3>
-            <a href="https://www.datacamp.com/" target="_blank"
-              ><p>Sign up for Data Camp</p></a
-            >
-            <a
-              href="https://automating-gis-processes.github.io/2016/Lesson1-Intro-Python-GIS.html"
-              target="_blank"
-            >
-              <p>
-                Check out all the different Python geospatial modules (scroll
-                down)
-              </p></a
-            >
-            <p>Setup a local Jupyter Notebook session (follow along...)</p>
-            <a
-              href="https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py"
-              target="_blank"
-            >
-              <p>Make your first plot with matplotlib</p></a
-            >
-          </section>
-        </section>
-        <section>
-          <section>
-            <h1>(Spatial) Databases</h1>
-          </section>
-          <section class="stretch">
-            <h3>Review: What is a database?</h3>
-            <ul>
-              <li class="fragment">
-                A <strong><i>database</i></strong> is an integrated set of data
-                relating to a particular subject.
               </li>
               <li class="fragment">
-                A <strong><i>Database Management System (DBMS)</i></strong> is a
-                software application designed to organize the storage and access
-                of data.
+                <span style="color: teal"
+                  >HTTP (Hypertext Transfer Protocol)</span
+                >
+                <small
+                  >messaging protocol that allows web browsers to communicate
+                  with web servers (where web sites are stored).</small
+                >
               </li>
               <li class="fragment">
-                Databases form the basis of all GIS vector analysis.
+                <span style="color: teal">HTML, CSS , JavaScript</span>
+                <small>
+                  three technologies needed to build a website that runs in the
+                  browser.</small
+                >
+              </li>
+              <li class="fragment">
+                <span style="color: teal"
+                  >Server-side languages and frameworks (back end or
+                  server-side)</span
+                >
+                <small
+                  >languages that run on the server before the result is then
+                  sent to the browser to be displayed.</small
+                >
               </li>
             </ul>
-          </section>
-          <section class="stretch">
-            <h3>Review: What is a database?</h3>
-            <img
-              src="./assets/img/features-attributes.png"
-              style="background:none; border:none; box-shadow:none;"
-            />
-          </section>
-          <section class="stretch">
-            <h3>Data are stored in tables</h3>
-            <img
-              src="./assets/img/record-attributes.png"
-              style="background:none; border:none; box-shadow:none;"
-            />
-          </section>
-          <section class="stretch">
-            <h3>Flat Database</h3>
-            <img
-              src="./assets/img/flat-db.png"
-              style="background:none; border:none; box-shadow:none;"
-            />
-            <ul>
-              <li class="fragment">All information in one table.</li>
-              <li class="fragment">Potentially much duplication of values.</li>
-              <li class="fragment">e.g. an Excel spreadsheet.</li>
-            </ul>
-          </section>
-          <section class="stretch">
-            <h3>Relational Database</h3>
-            <img
-              src="./assets/img/rdbms-text.png"
-              style="background:none; border:none; box-shadow:none;"
-            />
-          </section>
-
-          <section class="stretch">
-            <h3>Joining Tables in RDBMS</h3>
-            <img
-              src="./assets/img/join-tables.png"
-              style="background:none; border:none; box-shadow:none;"
-            />
-          </section>
-
-          <section class="stretch">
-            <h3>What about spatial data?</h3>
-            <img
-              src="./assets/img/geometry-column.png"
-              style="width: 600px; background:none; border:none; box-shadow:none;"
-            />
-          </section>
-
-          <section class="stretch">
-            <h3>PostgreSQL and PostGIS</h3>
-            <a href="http://postgis.net/" target="_blank">
-              <img
-                src="https://i.pinimg.com/originals/de/96/45/de9645c40359c1934f223f8f10f94d93.png"
-                style="width: 600px; background:none; border:none; box-shadow:none;"
-              />
-            </a>
-          </section>
-
-          <section class="stretch">
-            <h3>What about spatial data?</h3>
-            <a
-              href="http://postgis.net/workshops/postgis-intro/geometries.html"
-              target="_blank"
-            >
-              <img
-                src="http://postgis.net/workshops/postgis-intro/_images/start01.png"
-                style="width: 600px; background:none; border:none; box-shadow:none;"
-              />
-            </a>
-            <p>
+            <small>
               <a
-                href="https://postgis.net/docs/reference.html#Geometry_Outputs"
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards"
                 target="_blank"
-                >...and spatial data outputs?</a
-              >
-            </p>
+                >Source credit: Mozilla</a
+              ></small
+            >
           </section>
 
           <section class="stretch">
-            <h3>An example scenario</h3>
-            <a
-              href="https://data.detroitmi.gov/datasets/parcels-2/data"
-              target="_blank"
-            >
-              <img
-                src="./assets/img/property-praxis-data-model.png"
-                style="width: 600px; background:none; border:none; box-shadow:none;"
-              />
-            </a>
+            <h3>How do computers communicate with each other?</h3>
+            <img
+              alt="client-server model of computing"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
           </section>
 
           <section>
-            <h3>Exercises</h3>
-            <a href="https://www.w3schools.com/sql/" target="_blank"
-              ><p>Sart learning SQL</p></a
-            >
-            <a href="http://sqlfiddle.com/" target="_blank"
-              ><p>Try SQLFiddle</p></a
+            <h3>HTTP: Hypertext Transfer Protocol</h3>
+            <ul>
+              <li class="fragment">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+                  target="_blank"
+                  >HTTP</a
+                >
+                is a protocol which allows the fetching of resources, such as
+                HTML documents (aka web pages).
+              </li>
+            </ul>
+            <br /><br />
+            <small
+              ><a
+                href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model"
+                target="_blank"
+                >Source credit: Wikipedia</a
+              ></small
             >
           </section>
-        </section>
 
-        <section>
+          <section>
+            <h3>HTTP Request Messages</h3>
+            <img
+              alt="http request message"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+            <small
+              ><a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+                target="_blank"
+                >Source credit: Wikipedia</a
+              ></small
+            >
+          </section>
+
+          <section>
+            <h3>HTTP Request Methods</h3>
+            <img
+              alt="http request methods"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+            <small
+              ><a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+                target="_blank"
+                >Source credit: Wikipedia</a
+              ></small
+            >
+          </section>
+
+          <section>
+            <h3>HTTP Response Messages</h3>
+            <img
+              alt="http response mesages"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+            <small
+              ><a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+                target="_blank"
+                >Source credit: Wikipedia</a
+              ></small
+            >
+          </section>
+
+          <section>
+            <h3>HTTP Response Status</h3>
+            <img
+              alt="http response status"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+            <small
+              ><a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+                target="_blank"
+                >Source credit: Wikipedia</a
+              ></small
+            >
+          </section>
+
+          <section>
+            <h3>Exercise: Press the F12 key on your keyboard</h3>
+            <img
+              alt="F12 button"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+          </section>
+
+          <section>
+            <h3>What is Web GIS?</h3>
+            <img
+              alt="Web GIS diagram"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+            <small
+              >Source credit: Getting to Know Web GIS, Third Edition
+            </small>
+          </section>
+
+          <section>
+            <h3>Explore an Example</h3>
+            <a href="https://covid19.antievictionmap.com/" target="_blank">
+              <img
+                alt="Covid-19 map"
+                src=""
+                style="
+                  width: 600px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
+            /></a>
+            <br /><br />
+          </section>
+
+          <section>
+            <h3>
+              Interactive Map <span style="color: crimson">Design</span> and
+              <span style="color: teal">Development</span>
+            </h3>
+            <img
+              alt="interactive mapping conceptual design"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+            <small
+              ><a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+                target="_blank"
+                >Source credit: Wikipedia</a
+              ></small
+            >
+          </section>
+
+          <section>
+            <h3>Interactive Map <span style="color: crimson">Design</span></h3>
+            <blockquote>
+              “…average users are not very competent at the internet. Or, at
+              least, you should assume that. Don't do the opposite and assume
+              your users will know how to use an online map. Many will not be
+              familiar with them, and maybe not even realize you can scroll to
+              zoom in (most of the time).”
+            </blockquote>
+            <br /><br />
+            <small
+              ><a
+                href="https://www.codementor.io/@victorgerardtemprano/principles-of-interactive-map-design-gpelaseu2"
+                target="_blank"
+                >Victor Temprano 2018</a
+              ></small
+            >
+          </section>
+
+          <section>
+            <h3>Interactive Map <span style="color: crimson">Design</span></h3>
+            <img
+              alt="Zeplin mockup"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+            <small
+              ><a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+                target="_blank"
+                >Source credit: Wikipedia</a
+              ></small
+            >
+          </section>
+
+          <section>
+            <h3>
+              Interactive Map <span style="color: teal">Development</span>
+            </h3>
+            <img
+              alt="HTML, CSS, Javascript gears"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+            <small
+              >Source credit: Getting to Know Web GIS, Third Edition
+            </small>
+          </section>
+
+          <section>
+            <h3>
+              Interactive Map <span style="color: teal">Development</span>
+            </h3>
+            <img
+              alt="HTML, CSS, Javascript webpage"
+              src=""
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
+            />
+            <br /><br />
+            <small
+              >Source credit: Getting to Know Web GIS, Third Edition
+            </small>
+          </section>
+
+          <section>
+            <h3>Hypertext Markup Language (HTML)</h3>
+            <a
+              href="https://codepen.io/timhitchins/pen/BaQBgQY"
+              target="_blank"
+            >
+              <img
+                alt="HTML Example"
+                src=""
+                style="
+                  width: 600px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
+            /></a>
+            <br /><br />
+          </section>
+
+          <section>
+            <h3>Cascading Style Sheets (CSS)</h3>
+            <a
+              href="https://codepen.io/timhitchins/pen/eYBOwRq"
+              target="_blank"
+            >
+              <img
+                alt="CSS Example"
+                src=""
+                style="
+                  width: 600px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
+            /></a>
+            <br /><br />
+          </section>
+
+          <section>
+            <h3>JavaScript (JS)</h3>
+            <a
+              href="https://codepen.io/timhitchins/pen/jOVNjaX"
+              target="_blank"
+            >
+              <img
+                alt="JS Example"
+                src=""
+                style="
+                  width: 600px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
+            /></a>
+            <br /><br />
+          </section>
+
+          <section>
+            <h3>Google Simple Map</h3>
+            <a
+              href="https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/map-simple"
+              target="_blank"
+            >
+              <img
+                alt="Google map"
+                src=""
+                style="
+                  width: 600px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
+            /></a>
+            <br /><br />
+          </section>
+        </section>
+        <!-- <section>
           <section class="stretch">
             <h3>Web Development / GIS</h3>
             <p>
@@ -501,7 +744,12 @@
             </p>
             <img
               src="https://www.10bestdesign.com/blog/content/images/2018/03/30.png"
-              style="width: 600px; background:none; border:none; box-shadow:none;"
+              style="
+                width: 600px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
             />
             <br />
             <small>Image credit: 10 Best Design</small>
@@ -517,7 +765,7 @@
             <h3>What is Web GIS?</h3>
             <img
               src="./assets/img/web-gis.png"
-              style="background:none; border:none; box-shadow:none;"
+              style="background: none; border: none; box-shadow: none"
             />
           </section>
 
@@ -525,7 +773,7 @@
             <h3>Web GIS Architecture</h3>
             <img
               src="./assets/img/web-gis-architecture.png"
-              style="background:none; border:none; box-shadow:none;"
+              style="background: none; border: none; box-shadow: none"
             />
           </section>
 
@@ -537,7 +785,12 @@
             >
               <img
                 src="https://cdn-images-1.medium.com/max/2000/1*V7TMAzvhW7_cn9FbkKqOcQ.png"
-                style="width: 450px; background:none; border:none; box-shadow:none;"
+                style="
+                  width: 450px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
               />
             </a>
           </section>
@@ -549,7 +802,12 @@
             >
               <img
                 src="https://cdn-images-1.medium.com/max/1000/1*0kf59M9bNuEIRNDaj54QvQ.png"
-                style="width: 450px; background:none; border:none; box-shadow:none;"
+                style="
+                  width: 450px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
               />
             </a>
           </section>
@@ -559,7 +817,12 @@
             <a href="http://geoserver.org/" target="_blank">
               <img
                 src="./assets/img/geoserver-logo.png"
-                style="width: 450px; background:none; border:none; box-shadow:none;"
+                style="
+                  width: 450px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
               />
             </a>
           </section>
@@ -569,7 +832,12 @@
             <a href="http://geojson.io/#map=2/20.0/0.0" target="_blank">
               <img
                 src="./assets/img/geojson.png"
-                style="width: 450px; background:none; border:none; box-shadow:none;"
+                style="
+                  width: 450px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
               />
             </a>
             <a
@@ -578,7 +846,12 @@
             >
               <img
                 src="https://www.valuecoders.com/blog/wp-content/uploads/2018/02/codepen.png"
-                style="width: 450px; background:none; border:none; box-shadow:none;"
+                style="
+                  width: 450px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
               />
             </a>
           </section>
@@ -587,7 +860,12 @@
             <h1>Putting It All Together</h1>
             <img
               src="https://www.revenueriver.co/hs-fs/hubfs/fullstack.jpeg?width=792&name=fullstack.jpeg"
-              style="width: 650px; background:none; border:none; box-shadow:none;"
+              style="
+                width: 650px;
+                background: none;
+                border: none;
+                box-shadow: none;
+              "
             />
           </section>
 
@@ -596,16 +874,28 @@
             <a href="https://sr-dev-39d30.firebaseapp.com/" target="_blank"
               ><img
                 src="./assets/img/sr-app.png"
-                style="width: 650px; background:none; border:none; box-shadow:none;"
+                style="
+                  width: 650px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
             /></a>
           </section>
 
           <section class="stretch">
             <h3>Another Example</h3>
-            <a href="http://www.capainsights.org/honolulu-hawaii" target="_blank"
+            <a
+              href="http://www.capainsights.org/honolulu-hawaii"
+              target="_blank"
               ><img
                 src="./assets/img/capa-hawaii.png"
-                style="width: 650px; background:none; border:none; box-shadow:none;"
+                style="
+                  width: 650px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
             /></a>
           </section>
 
@@ -614,7 +904,12 @@
             <a href="https://fierce-lake-13126.herokuapp.com/" target="_blank"
               ><img
                 src="./assets/img/iq-app.png"
-                style="width: 650px; background:none; border:none; box-shadow:none;"
+                style="
+                  width: 650px;
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                "
             /></a>
           </section>
 
@@ -633,13 +928,19 @@
               ><p>Check out Leaflet.js</p></a
             >
           </section>
-        </section>
+        </section> -->
 
         <section class="stretch">
           <h1>Thanks!</h1>
           <img
             src="./assets/img/hitchins-transparent-logo.png"
-            style="height: 100px; width: 100px; background:none; border:none; box-shadow:none; "
+            style="
+              height: 100px;
+              width: 100px;
+              background: none;
+              border: none;
+              box-shadow: none;
+            "
           />
           <p>
             Email:
@@ -676,7 +977,7 @@
         multiplex: {
           secret: "15372975462974572482",
           id: "b6cc78829077f9fe",
-          url: "https://reveal-js-multiplex-ccjbegmaii.now.sh"
+          url: "https://reveal-js-multiplex-ccjbegmaii.now.sh",
         },
 
         // More info https://github.com/hakimel/reveal.js#dependencies
@@ -689,11 +990,11 @@
           {
             src: "plugin/highlight/highlight.js",
             async: true,
-            callback: function() {
+            callback: function () {
               hljs.initHighlightingOnLoad();
-            }
-          }
-        ]
+            },
+          },
+        ],
       });
     </script>
   </body>
